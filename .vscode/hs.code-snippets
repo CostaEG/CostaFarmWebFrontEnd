@@ -1,0 +1,39 @@
+{
+	"Redux Slice": {
+	 	"scope": "typescript",
+	 	"prefix": "hs.slice",
+	 	"body": [
+			"import { createSlice, PayloadAction } from '@reduxjs/toolkit';",
+			"import { configureReducer, injectReducer } from '../core/store';",
+			"",
+	 		"export interface ${1:name}State {",
+			"",
+			"}",
+			"", 
+			"const initialState: ${1:name}State = {",
+			"",
+			"};",
+			"",
+			"var { name, getState } = configureReducer({",
+			"    ${1:name}: initialState",
+			"});",
+			"", 
+			"export type ${1:name}ReducerState = ReturnType<typeof getState>;",
+			"",
+			"export const ${1:name}Slice = createSlice({",
+			"    name,",
+			"    initialState,",
+			"    reducers: {",
+			"        setData: (state, action: PayloadAction<any>) => {",
+			"",
+			"        },",
+			"    }",
+			"});",
+			"", 
+			"injectReducer(name, ${1:name}Slice.reducer);",
+			"", 
+			"export const { setData } = ${1:name}Slice.actions;"
+	 	],
+	 	"description": "Redux slice"
+	}
+}

@@ -1,0 +1,150 @@
+{
+    "customer": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "categoryId": 1,
+            "standardTier": 1,
+            "notes": null,
+            "defaultDiscountPercentage": 0.00,
+            "overdueAccount": false,
+            "createdAt": "0001-01-01T00:00:00+00:00",
+            "createdBy": null,
+            "updatedAt": "2023-04-17T10:45:06.5934251-04:00",
+            "updatedBy": null,
+            "archivedBy": null,
+            "rowVersion": "AAAAAAAAB+E=",
+            "orders": null,
+            "tags": null,
+            "customerCategory": null
+        },
+        {
+            "id": 2,
+            "name": "Jane Doe",
+            "categoryId": 2,
+            "standardTier": 3,
+            "notes": null,
+            "defaultDiscountPercentage": 0.00,
+            "overdueAccount": false,
+            "createdAt": "0001-01-01T00:00:00+00:00",
+            "createdBy": null,
+            "updatedAt": "2023-04-17T10:45:06.5934251-04:00",
+            "updatedBy": null,
+            "archivedBy": null,
+            "rowVersion": "AAAAAAAAB+A=",
+            "orders": null,
+            "tags": null,
+            "customerCategory": null
+        }
+    ],
+    "customer-category": [
+        {
+            "id": 1,
+            "code": "",
+            "name": "Category #1"
+        },
+        {
+            "id": 2,
+            "code": "",
+            "name": "Category #2"
+        }
+    ],
+    "customer-tag": [
+        {
+            "id": 1,
+            "tag": "Tag A"
+        },
+        {
+            "id": 2,
+            "tag": "Tag B"
+        }
+    ],
+    "sales-order-products": [
+        {
+            "id": 1,
+            "code": "ROSE",
+            "name": "Roses",
+            "defaultPrice": 1.50
+        },
+        {
+            "id": 2,
+            "code": "PALM",
+            "name": "Palm trees",
+            "defaultPrice": 25.00
+        },
+        {
+            "id": 3,
+            "code": "MNG",
+            "name": "Mango trees",
+            "defaultPrice": 550.00
+        }
+    ],
+    "sales-order": [
+        {
+            "id": 1,
+            "activationDate": "2023-04-18T00:00:00",
+            "sellerName": null,
+            "orderStatus": 0,
+            "paymentStatus": 0,
+            "shippingStatus": 0,
+            "shippingType": 0,
+            "taxAmount": 0.00,
+            "shippingAmount": 12.00,
+            "totalAmount": 13.00,
+            "paidAmount": 0.00,
+            "createdAt": "2023-04-17T16:56:09.7388491-04:00",
+            "createdBy": "{\"CustomerId\":null,\"Sid\":null,\"ImpersonatorSid\":null,\"GuestIdentifier\":null,\"ClientIdentifier\":null,\"Entitlements\":null,\"ExternalProvider\":null,\"Scopes\":null,\"ResourceScopes\":null,\"Roles\":null}",
+            "updatedAt": "2023-04-17T16:56:09.7388491-04:00",
+            "updatedBy": null,
+            "archivedBy": null,
+            "rowVersion": "AAAAAAAAB94=",
+            "customerId": 1,
+            "customer": {
+                "id": 1,
+                "name": "John Doe BQ",
+                "categoryId": 1,
+                "standardTier": 1,
+                "notes": null,
+                "defaultDiscountPercentage": 0.00,
+                "overdueAccount": false,
+                "createdAt": "0001-01-01T00:00:00+00:00",
+                "createdBy": null,
+                "updatedAt": "2023-04-17T10:45:06.5934251-04:00",
+                "updatedBy": null,
+                "archivedBy": null,
+                "rowVersion": "AAAAAAAAB+E=",
+                "orders": [
+                    null
+                ],
+                "tags": null,
+                "customerCategory": null
+            },
+            "items": [
+                {
+                    "id": 0,
+                    "quantity": 3,
+                    "price": 10,
+                    "salesProductId": 1,
+                    "salesProduct": {
+                        "id": 1,
+                        "code": "ROSE",
+                        "name": "Roses",
+                        "defaultPrice": 1.50
+                    }
+                },
+                {
+                    "id": 0,
+                    "quantity": 1,
+                    "price": 40,
+                    "salesProductId": 2,
+                    "salesProduct": {
+                        "id": 2,
+                        "code": "PALM",
+                        "name": "Palm trees",
+                        "defaultPrice": 25.00
+                    }
+                }
+            ]
+        }
+    ]
+}
