@@ -73,6 +73,12 @@ mainMenu.push(
                 icon: 'SyncAltOutlined',
                 path: 'adjustments',
                 component: Empty
+            },
+            {
+                title: 'Research & Development',
+                icon: 'BiotechOutlined',
+                path: 'r&d',
+                component: Empty
             }
         ]
     },

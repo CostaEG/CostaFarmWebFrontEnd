@@ -142,7 +142,7 @@ function HSMenuCategory({ category, open }: { category: MainMenuCategory, open: 
     }
                 
     return (
-        <>            
+        <>          
             <MenuItemLayout 
                 title={category.title} 
                 icon={category.icon} 
