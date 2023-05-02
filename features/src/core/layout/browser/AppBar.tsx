@@ -7,7 +7,7 @@ import { useAppDispatch, useAppSelector, useSecurityContext } from '../../hooks'
 import { manifest } from '../../manifest';
 import { logout } from '../../security/browser/utils';
 
-const logo = require("./assets/mini-logo.png");
+const logo = require("./assets/favicon.ico");
 
 export const appBarHeight = 56;
 
