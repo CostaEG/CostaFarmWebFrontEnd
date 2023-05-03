@@ -23,7 +23,6 @@ import { AppDispatch } from '../../store';
 import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Loading from '../../layout/browser/Loading';
-import './login.css';
 
 const logo = require('../../layout/browser/assets/Costa-Farms-Logo-new.png');
 
@@ -72,6 +71,8 @@ export default function Login() {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
+          justifyContent: 'center',
+          height: '80vh',
         }}
       >
         <img src={logo} width={'300'} alt="Logo" />
